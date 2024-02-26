@@ -12,7 +12,7 @@ function getAdvice () {
     });
 }
 
-window.onload = () => getAdvice();
+window.onload = () => getAdvice;
 
 
 // Add functionality To the Generator Button
