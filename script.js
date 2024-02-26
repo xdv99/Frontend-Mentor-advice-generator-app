@@ -12,8 +12,8 @@ function getAdvice () {
     });
 }
 
-window.onload = () => getAdvice;
+window.onload = () => getAdvice();
 
 
 // Add functionality To the Generator Button
-generator.addEventListener('click', () => getAdvice());
+generator.addEventListener('click', getAdvice);
