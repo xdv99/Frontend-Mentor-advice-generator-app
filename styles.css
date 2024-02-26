@@ -1,0 +1,93 @@
+/* 
+Light Cyan: hsl(193, 38%, 86%)
+Neon Green: hsl(150, 100%, 66%)
+Neutral
+Grayish Blue: hsl(217, 19%, 38%)
+Dark Grayish Blue: hsl(217, 19%, 24%)
+Dark Blue: hsl(218, 23%, 16%)
+
+Body Copy
+Font size (quote): 28px
+Font
+Family: Manrope
+Weights: 800
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {font-size: 28px}
+
+body {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 23%, 16%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    box-shadow: 0 2px 4px 3px hsl(218, 23%, 16%)
+}
+
+#advice-id {
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 16px;
+    color: hsl(150, 100%, 66%);
+}
+
+#advice-content {
+    font-family: 'Manrope';
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#divider-mobile, #divider-desktop {max-width: 100%}
+
+#divider-desktop {display: none}
+
+#generator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(150, 100%, 66%);
+    padding: 20px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;
+    cursor: pointer;
+    transition: box-shadow .5s;
+}
+
+#generator:hover {
+    box-shadow: 0 0 20px 0px hsl(150, 100%, 66%);
+}
+
+#generator img {
+    width: 30px;
+}
+
+@media only screen and (min-width: 700px) {
+    #divider-mobile {display: none}
+
+    #divider-desktop {display: block}
+
+    main {width: 50%}
+}
